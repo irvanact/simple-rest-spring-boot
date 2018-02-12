@@ -1,0 +1,11 @@
+.*
+*iml
+*.yml
+service.log*
+*/src/generated/
+/.nb-gradle/
+bin/
+*.ipr
+*.iws
+build/
+out/

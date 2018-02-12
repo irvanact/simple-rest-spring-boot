@@ -1,0 +1,35 @@
+hibernate:
+ dialect: org.hibernate.dialect.PostgreSQLDialect
+ id:
+   new_generator_mappings: true
+link:
+ playstore: '#'
+logging:
+ file: service.log
+ level:
+   root: INFO
+multipart:
+ maxFileSize: 500000000
+ maxRequestSize: 500000000
+partial_load:
+ size: 20
+server:
+ port: 12000
+spring:
+ database:
+   driverClassName: org.postgresql.Driver
+ datasource:
+   password: test
+   platform: postgres
+   url: jdbc:postgresql://localhost:5432/test
+   username: test
+ jpa:
+   database: POSTGRESQL
+   hibernate:
+     ddl-auto: none
+   show-sql: true
+ resources:
+   static-locations: file:src/main/resources/static/
+ jackson:
+   serialization:
+    FAIL_ON_EMPTY_BEANS: false
